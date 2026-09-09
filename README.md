@@ -1,6 +1,6 @@
 # SyNasPy
 
-## modern macOS application for managing Synology NAS servers.
+## A modern macOS application for managing Synology NAS servers.
 
 Wake up your NAS, shut it down safely, mount SMB volumes, manage multiple servers, and automate common tasks — all from a clean and intuitive macOS interface.
 
