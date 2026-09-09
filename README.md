@@ -304,6 +304,61 @@ Full license text: https://www.gnu.org/licenses/gpl-3.0.html
 Made with ❤️ for the NAS community.
 
 **SyNasPy makes managing your Synology NAS on macOS simple, secure, and efficient.**
+
 ---
 
+<details>
+<summary>🔒 macOS Gatekeeper Info</summary>
+
+
+SyNasPy is currently not signed with an Apple Developer certificate.
+
+When starting the app for the first time, macOS Gatekeeper may block the app from running.
+
+1. Open the app once.
+2. Close the warning.
+3. **System Settings → Privacy & Security**
+4. Scroll all the way down to the warning "SyNasPy was blocked..." 
+5. Select **“Open Anyway”**
+6. If you are warned again: select **“Open Anyway”** again and confirm with your password.
+
+### Alternatively, remove the quarantine attribute:
+
+🍎 macOS Terminal
+
+xattr -d com.apple.quarantine '/Users/username/Downloads/SyNasPy.app'
+
+> Please adjust the file path accordingly.
+
+</details>
+
+---
+
+<details>
+<summary>🖥️ Download-Info</summary>
+
+### Download-Versiones
+
+| Suffix | Betriebssystem |
+|--------|-----------------|
+| `_macOS_as` | Apple Silicon (M1–M4) |
+| `_macOS_intel` | Intel Macs |
+
+### Extract 7z-Archive
+
+| Betriebssystem | Empfohlene App |
+|---------------|----------------|
+| 🍎 macOS | **Keka** – <https://www.keka.io/> |
+| 🪟 Windows | **7-Zip** – <https://www.7-zip.org/> |
+
+</details>
+
+---
+
+<details>
+<summary>🔑 7z Password</summary>
+
+**BinhDiez**
+
+</details>
 
