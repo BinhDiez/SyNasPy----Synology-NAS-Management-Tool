@@ -1,0 +1,21 @@
+
+# SyNasPy - Abhängigkeiten
+
+# GUI and Framework
+PyQt5>=5.15.0
+
+# Update-Check (HTTP-Requests)
+requests>=2.28.0
+
+# Semantic Versioning
+packaging>=21.0
+
+
+
+Installation
+
+Führen Sie im Projektverzeichnis aus:
+
+
+pip install -r requirements.txt
+

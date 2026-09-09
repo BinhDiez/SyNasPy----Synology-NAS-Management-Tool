@@ -1,0 +1,42 @@
+
+Opening / Using SyNasPy
+
+If the Gatekeeper warning appears in macOS stating that the app has not been notarized by Apple or that the notarization could not be verified, and you trust the source of the app, you can still open it.
+
+Sorry, but notarization would incur annual costs for me. Since I do not generate any revenue with this app, I choose not to do so.
+
+The good news:
+You can still open the app.
+
+Method 1: Via System Settings (recommended)
+
+1. Try to open PDFDarkView.app once.
+2. The warning appears – click on Done or Cancel. (Do not move it to the Trash.)
+3. Open System Settings → Privacy & Security.
+4. Scroll down. There should be a message like:
+   “SyNasPy.app was blocked …”
+5. Confirm the dialog by clicking Open Anyway.
+
+Method 2: Right-click
+
+1. Select the app in Finder.
+2. Right-click (or Ctrl-click) → Open.
+3. In the following dialog, choose Open again.
+
+This will mark the app as trusted permanently.
+
+If there is no "Open Anyway" button
+
+On newer macOS versions, the warning can sometimes be stricter. In that case, you can remove the quarantine attribute via Terminal:
+
+xattr -d com.apple.quarantine /path/to/SyNasPy.app
+
+Or, if the app is in the Applications folder, for example:
+
+xattr -d com.apple.quarantine "/Applications/SyNasPy.app"
+
+If the app is in your Downloads folder:
+
+xattr -d com.apple.quarantine "$HOME/Downloads/SyNasPy.app"
+
+After that, start the app again.

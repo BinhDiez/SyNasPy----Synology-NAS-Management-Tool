@@ -1,0 +1,43 @@
+
+
+Mở / Sử dụng SyNasPy
+
+Nếu cảnh báo Gatekeeper xuất hiện trên macOS thông báo rằng ứng dụng chưa được Apple chứng nhận (notarize) hoặc không thể xác minh chứng nhận, và bạn tin tưởng vào nguồn gốc của ứng dụng, bạn vẫn có thể mở nó.
+
+Xin lỗi, nhưng việc chứng nhận sẽ phát sinh chi phí hàng năm cho tôi. Vì tôi không tạo ra bất kỳ doanh thu nào từ ứng dụng này, tôi quyết định không thực hiện.
+
+Tin tốt là:
+Bạn vẫn có thể mở ứng dụng.
+
+Phương pháp 1: Qua Cài đặt hệ thống (khuyến nghị)
+
+1. Thử mở SyNasPy.app một lần.
+2. Cảnh báo xuất hiện – nhấn vào Done hoặc Cancel. (Không được bỏ vào Thùng rác.)
+3. Mở Cài đặt hệ thống → Quyền riêng tư & Bảo mật.
+4. Cuộn xuống dưới. Sẽ có thông báo như:
+   “PDFDarkView.app đã bị chặn …”
+5. Xác nhận hộp thoại bằng cách nhấn Mở vẫn được.
+
+Phương pháp 2: Nhấp chuột phải
+
+1. Chọn ứng dụng trong Finder.
+2. Nhấp chuột phải (hoặc Ctrl + nhấp) → Mở.
+3. Trong hộp thoại tiếp theo, chọn Mở lần nữa.
+
+Cách này sẽ đánh dấu ứng dụng là đáng tin cậy vĩnh viễn.
+
+Nếu không có nút "Mở vẫn được"
+
+Trên các phiên bản macOS mới hơn, cảnh báo đôi khi có thể khắt khe hơn. Trong trường hợp đó, bạn có thể xóa thuộc tính cách ly (quarantine) qua Terminal:
+
+xattr -d com.apple.quarantine /đường/dẫn/đến/SyNasPy.app
+
+Hoặc, nếu ứng dụng nằm trong thư mục Ứng dụng, ví dụ:
+
+xattr -d com.apple.quarantine "/Applications/SyNasPy.app"
+
+Nếu ứng dụng nằm trong thư mục Tải xuống của bạn:
+
+xattr -d com.apple.quarantine "$HOME/Downloads/SyNasPy.app"
+
+Sau đó, khởi động lại ứng dụng.
