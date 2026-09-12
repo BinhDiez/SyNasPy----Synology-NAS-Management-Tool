@@ -91,6 +91,8 @@ SyNasPy is available in **17 languages**:
 - 🇹🇷 Turkish (Türkçe)
 - 🇻🇳 Vietnamese (Tiếng Việt)
 
+>Note: The translations were created with the help of AI. As a result, they may contain linguistic inaccuracies or unclear wording.
+
 ---
 
 ## 🎨 User Experience
